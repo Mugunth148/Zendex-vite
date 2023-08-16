@@ -1,5 +1,6 @@
 import  "./Home.scss"
 import {Overview} from "../../components"
+import { Outlet } from "react-router-dom"
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <div className="yellow-ball"></div>
     </div>
     <Overview />
+    <Outlet />
     </>
   )
 }

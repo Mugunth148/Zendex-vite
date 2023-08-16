@@ -1,6 +1,6 @@
 
 import {Home, About, Work,} from './container';
-import { BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 // import { Darkmode } from "./components"; 
 import './components/Darkmode/DarkMode.scss';
 
@@ -45,9 +45,10 @@ const App = () => {
         </ul>
     </nav>
        <Routes>
-       <Route exact path='/' element={<Home/>}/>
+       <Route exact path='*' element={<Home/>}/>
        <Route exact path='about' element={<About/>}/>
        <Route exact path='work'  element={<Work/>}/>
+       <Route path='/' element={<h1>404</h1>}/>
        </Routes>
     </Router>
     </div>
