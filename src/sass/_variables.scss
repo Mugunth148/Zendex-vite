@@ -1,0 +1,16 @@
+:root {
+  --primary: #fffaf1;
+  --secondary: #111;
+  --gc: black;
+}
+
+[data-theme="dark"] {
+  --primary: #111;
+  --secondary: #fff6e5;
+  --gc: white;
+} 
+
+ @font-face {
+  font-family: Valorant;
+  src: url("../public/Valorant Font.ttf");
+}

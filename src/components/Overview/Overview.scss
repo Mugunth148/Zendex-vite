@@ -1,0 +1,40 @@
+@import '../../sass/variables';
+
+.overview {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary);
+
+  span {
+    font-size: 200px;
+    font-weight: 700;
+    color: var(--secondary);
+    text-transform: uppercase;
+    position: absolute;
+    top: 95%;
+    background: linear-gradient(to top, transparent 25%, var(--gc) 390%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    backdrop-filter: brightness(-5);
+    font-family: Valorant;
+     }
+
+  .overview_header{
+    width: 100%;
+    height: 15vh;
+    color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;  
+    z-index: 1;  
+
+    h1{
+        font-family: Valorant;
+    }
+  }
+}
