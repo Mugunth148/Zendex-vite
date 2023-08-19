@@ -1,8 +1,8 @@
 
 import {Home, About, Work,} from './container';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-// import { Darkmode } from "./components"; 
 import './components/Darkmode/DarkMode.scss';
+import { Ham } from './components';
 
 const App = () => { 
 
@@ -26,12 +26,13 @@ const App = () => {
  return (
 
    <div id="root" >
+    <Ham />
     <Router>
        <nav className="navbar">
             <Link className="Link" to="/"><h1>Mugunth</h1></Link>
         <ul>
-            <Link className="Link" to="about"><li>About</li></Link>
-            <Link className="Link" to="work"><li>Work</li></Link>
+            <Link className="Link" to="about"><li>About< hr/></li></Link>
+            <Link className="Link" to="work"><li>Work<hr/></li></Link>
             <li id='darkmode'><div className='dark_mode'>
            <input
                className='dark_mode_input'
@@ -45,10 +46,10 @@ const App = () => {
         </ul>
     </nav>
        <Routes>
-       <Route exact path='*' element={<Home/>}/>
-       <Route exact path='about' element={<About/>}/>
-       <Route exact path='work'  element={<Work/>}/>
-       <Route path='/' element={<h1>404</h1>}/>
+       <Route  exact path='*' element={<Home/>}/>
+       <Route  path='about' element={<About/>}/>
+       <Route  path='work'  element={<Work/>}/>
+       {/* <Route path='/' element={<h1>404</h1>}/>  */}
        </Routes>
     </Router>
     </div>

@@ -36,7 +36,22 @@
     h1{
         font-family: Valorant;
         margin-top: 40px;
+        opacity: 0.8;
     }
+  }
+}
+
+.overview-content{
+  height: 85vh;
+  width: 100%;
+  background-color: var(--primary);
+  .overview-l{
+    width: 50vh;
+    background: #000;
+  }
+  .overview-r{
+    width: 50vh;
+    background-color: #000;
   }
 }
 
@@ -44,15 +59,22 @@
   .overview {
 
     span {
-      top: 100%;
-      font-size: 70px;
+      display: flex;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      top: 108%;
+      left: -1%;
+      font-size: 90px;
+      background: linear-gradient(to right, transparent 40%, var(--gc) 400%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     .overview_header{
       
       h1 {
-        font-size: 60px;
-        margin-top: 0px;
+        visibility: hidden;
       }
     }
   }

@@ -1,10 +1,11 @@
 import  "./Home.scss"
-import {Overview} from "../../components"
+import {Ham, Overview} from "../../components"
 import { Outlet } from "react-router-dom"
 
 const Home = () => {
   return (
     <>
+    <Ham />
     <h1 className="hero-content">
       Hello Guys👋, Im Mugunth,a frontend Developer, UI/UX designer & 3D artist. I love creating
        beautiful and functional user interfaces. Im passionate about using technology to

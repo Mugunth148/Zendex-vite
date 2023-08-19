@@ -72,6 +72,18 @@ html {
           display: flex;
           justify-content: center;
           align-items: center;
+          transition: all 0.9s ease;
+          display: flex;
+          flex-direction: column;
+
+          hr {
+              width: 5%;
+              height: 2px;
+              transform: translate(-25px, 0px);
+              color: var(--secondary);
+              transition: all 0.9s ease;             
+          }
+          
          }
 
     #darkmode {
