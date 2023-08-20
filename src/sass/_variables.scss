@@ -14,3 +14,9 @@
   font-family: Valorant;
   src: url("../public/Valorant Font.ttf");
 }
+
+@mixin flex {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
