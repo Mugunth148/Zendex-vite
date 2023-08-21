@@ -1,60 +1,58 @@
 
 import {Home, About, Work,} from './container';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import './components/Darkmode/DarkMode.scss';
-import { Ham } from './components';
+import styles from './components/Hamburger/Ham.module.scss';
+import { Nav } from './components';
 
-const App = () => { 
+function App() {
 
-   const setDarkMode = () => {
-      document.querySelector('html').setAttribute('data-theme', 'dark');
-  };
-  const setLightMode = () => {
-      document.querySelector('html').setAttribute('data-theme', 'light');
-  };
+    const [isActive, setIsActive] = useState(false);
 
-  const toggleTheme= (e) => {
+    const [isBurgerVisible, setIsBurgerVisible] = useState(true);
 
-      if (e.target.checked) {
-          setDarkMode()
-      }
-      else {
-          setLightMode()
-      }
-  }
+    useEffect(() => {
+      const handleScroll = () => {
+        if (window.scrollY >= 0 && window.scrollY <= 10) {
+          setIsBurgerVisible(true);
+        } else {
+          setIsBurgerVisible(false);
+        }
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+  
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
 
- return (
+    return (
 
-   <div id="root" >
-    <Ham />
-    <Router>
-       <nav className="navbar">
-            <Link className="Link" to="/"><h1>Mugunth</h1></Link>
-        <ul>
-            <Link className="Link" to="about"><li>About< hr/></li></Link>
-            <Link className="Link" to="work"><li>Work<hr/></li></Link>
-            <li id='darkmode'><div className='dark_mode'>
-           <input
-               className='dark_mode_input'
-               type='checkbox'
-               id='darkmode-toggle'
-               onChange={toggleTheme}
-           />
-           <label className='dark_mode_label' htmlFor='darkmode-toggle'>
-           </label>
-       </div></li>
-        </ul>
-    </nav>
-       <Routes>
-       <Route  exact path='*' element={<Home/>}/>
-       <Route  path='about' element={<About/>}/>
-       <Route  path='work'  element={<Work/>}/>
-       {/* <Route path='/' element={<h1>404</h1>}/>  */}
-       </Routes>
-    </Router>
-    </div>
- )
-};
+        <div id="root">
+            <Router>
+                <motion.div initial={{ opacity: 0, visibility: 'hidden' }}
+                     animate={{
+                      opacity: isBurgerVisible ? 1 : 0,
+                      visibility: isBurgerVisible ? 'visible' : 'hidden',
+                    }}
+                    onClick={() => { setIsActive(!isActive); } } className={styles.button}>
+                    <div 
+                    className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}></div>
+                </motion.div>
+                <Nav />
+                <Routes>
+                    <Route exact path='*' element={<Home />} />
+                    <Route path='about' element={<About />} />
+                    <Route path='work' element={<Work />} />
+                    {/* <Route path='/' element={<h1>404</h1>}/>  */}
+                </Routes>
+            </Router>
+        </div>
+    );
+}
 
 
 export default App
