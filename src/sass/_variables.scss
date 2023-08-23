@@ -2,12 +2,14 @@
   --primary: #fffaf1;
   --secondary: #111;
   --gc: black;
+  --card:rgb(255, 250, 250);
 }
 
 [data-theme="dark"] {
   --primary: #111;
   --secondary: #fff6e5;
   --gc: white;
+  --card: #fffaf1;
 } 
 
  @font-face {

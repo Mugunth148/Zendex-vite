@@ -1,0 +1,21 @@
+@import "../../sass/variables";
+
+.overlay {    
+    height:100%;
+    width: 100%;
+    background-color: #000;
+    z-index: 15;
+    display: flex;
+}
+
+.bar {
+    height: 100%;
+    width: 20%;
+    background-color:black;
+}
+
+.counter {
+    position: absolute;
+    z-index: 16;
+    color: #fff;
+}
