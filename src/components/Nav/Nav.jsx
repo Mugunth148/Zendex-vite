@@ -25,8 +25,8 @@ function Nav() {
     <nav className="navbar">
                  <Link className="Link" to="/"><h1>Mugunth</h1></Link>
              <ul>
-                 <Link className="Link" to="about"><li>About< hr/></li></Link>
-                 <Link className="Link" to="work"><li>Work<hr/></li></Link>
+                 <Link className="Link" to="about"><li>About</li></Link>
+                 <Link className="Link" to="work"><li>Work</li></Link>
                  <li id='darkmode'><div className='dark_mode'>
                 <input
                     className='dark_mode_input'

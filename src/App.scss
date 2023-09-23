@@ -37,8 +37,14 @@ html {
 // *************************Mobile******************************
 
 @media screen and (max-width: 768px) {
-  html {
+  html, body {
     height: 100vh;
     width: 100vw;
+
+    #root{
+      height: 100%;
+      width: 100%;
+    }
+
   }
 }

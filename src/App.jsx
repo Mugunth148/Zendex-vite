@@ -7,7 +7,7 @@ function App() {
 
     return (
 
-        <div id="root">          
+        <>          
             <Router>
                 <Nav />
                 <Routes>
@@ -17,7 +17,7 @@ function App() {
                     {/* <Route path='/' element={<h1>404</h1>}/>  */}
                 </Routes>
             </Router>
-        </div>
+        </>
     );
 }
 
