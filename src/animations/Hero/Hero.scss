@@ -1,0 +1,15 @@
+@import '../../sass/variables';
+
+* {
+    font-family:PP, Helvetica;
+}
+
+span {
+    display: inline-block;
+    color: var(--secondary);
+}
+
+span:nth-child(1){
+    margin-right: 0;
+}
+

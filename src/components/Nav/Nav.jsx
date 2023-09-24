@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom"
 import './Nav.scss'
-
 function Nav() {
+
+    
 
     const setDarkMode = () => {
         document.querySelector('html').setAttribute('data-theme', 'dark');

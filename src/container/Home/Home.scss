@@ -1,13 +1,19 @@
 @import '../../sass/variables';
 
-.hero-content {
+  .hero-container{
+    z-index: 2;
+    text-align: center;
+  }
+
+  .container{
     z-index: 1;
     color: var(--secondary);
     font-family:  PP,helvetica,arial,sans-serif;
     font-size: 40px;
     font-weight: 50;
-    width: 915px;
     line-height: 45px;
+    max-width: 915px;
+    margin: 0 auto;
   }
   
   .ball-container {
