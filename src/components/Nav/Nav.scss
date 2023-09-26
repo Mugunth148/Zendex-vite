@@ -13,6 +13,7 @@
         list-style: none;
         text-decoration: none;
         flex: 3;
+        transition: all 1.5s;
     }
   
     h1 {
@@ -50,6 +51,7 @@
       #darkmode {
         margin: 0;
         margin-right: 60px;
+        
       }
     }
   }

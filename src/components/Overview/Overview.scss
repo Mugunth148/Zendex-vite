@@ -54,13 +54,46 @@
         .overview-1{
           height: 100%;
           width: 50%;
-          background: #0f0;
+        
+          .section{
+            height:100%;
+            width:100%;
+            position: sticky;
+            top: 0;
+          }
         }
     
         .overview-2{
           height: 100%;
           width: 50%;
-          background: #f00;
+          background-color: var(--primary);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .highlight-container{
+            background: violet;
+            height: 400px;
+            width: 500px;
+            border-radius: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .highlight {
+              background: lightpink;
+              height: 50%;
+              width: 90%;
+              border-radius: 200px;
+              display: flex;
+              justify-content: center;
+               align-items: center;
+
+               .light{
+                color:var(--secondary);
+               }
+            }
+          }
         }
   }
 }
@@ -93,7 +126,7 @@
         height: 90vh;
         width: 100vw;
         background: #000;
-        flex-direction: column;
+        flex-direction: column-reverse;
 
         .overview-1{
           height: 40%;
