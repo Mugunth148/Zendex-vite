@@ -1,5 +1,12 @@
 import { Link } from "react-router-dom"
 import './Nav.scss'
+import { gsap } from "gsap";
+
+
+gsap.to(Link, {
+   opacity: 0,
+   duration: 1   
+})
 
 function Nav() {
 
