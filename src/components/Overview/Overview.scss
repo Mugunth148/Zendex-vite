@@ -26,7 +26,7 @@
         filter: saturate(0.9);
     }
 
-    span {
+    #overview-bg {
       font-size: 200px;
       font-weight: 700;
       color: var(--secondary);
@@ -41,79 +41,21 @@
       font-family: Valorant;
          }
       }
-
-      .overview-content{
-        height: 300%;
-        width: 100vw;
+     
+      .overview-help{
+        background: #000;
+        height: 100%;
         display: flex;
-        justify-content: center;
-        flex-direction: row;
         align-items: center;
-        
-    
-        .overview-1{
-          height: 100%;
-          width: 50%;
-          position:sticky;
-          top:0;
 
-        
-          .section{
-            height:100dvh;
-            width:100%;
-            position: sticky;
-            top: 0;
-            background: #000;
-            color: #fff;
-          }
-
-          .section:nth-child(1){
-            background: lightblue;
-          }
-          .section:nth-child(2){
-            background: lightcoral;
-          }
-          .section:nth-child(3){
-            background: lightcyan;
-          }
+        .main-span {
+           font-size: 6rem;
+           font-weight: 550;
+           font-family: sans-serif;
+           text-transform: uppercase;
         }
-    
-        .overview-2{
-          height: 100%;
-          width: 50%;
-          background-color: var(--primary);
-          display:flex;
-          justify-content: center;
-
-
-          .highlight-container{
-            position: sticky;
-            top: 25%;
-            background: violet;
-            height: 400px;
-            width: 500px;
-            border-radius: 15%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-           
-
-            .highlight {
-              background: lightpink;
-              height: 50%;
-              width: 90%;
-              border-radius: 200px;
-              display: flex;
-              justify-content: center;
-               align-items: center;
-
-               .light{
-                color:var(--secondary);
-               }
-            }
-          }
-        }
-  }
+      }
+     
 }
 
 
@@ -132,40 +74,12 @@
         font-size: 50px;
       }
 
-      span {
+      #overview-bg {
         display: flex;
         top: 100%;
         left: -1%;
         font-size: 70px;
       }
-      }
-
-      .overview-content{
-        height: 90vh;
-        width: 100vw;
-        background: #000;
-        flex-direction: column-reverse;
-        position: sticky;
-        top:0;
-
-        .overview-1{
-          height: 40%;
-          width: 100%;
-
-          .section{
-            height: 400px;
-          }
-        }
-
-        .overview-2{
-          height: 60%;
-          width: 100%;
-
-          .highlight-container{
-            top:0;
-          }
-
-        }
       }
 }
 }
