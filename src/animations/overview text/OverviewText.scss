@@ -8,6 +8,10 @@
     height: 100%;
 }
 
+.submark {
+  opacity: 0.8;
+}
+
 .marquee {
     position: relative;
     width: 100vw;
@@ -18,6 +22,10 @@
         font-weight: 600;
         color: rgb(17, 12, 111);
         text-transform: uppercase;
+  }
+
+  .main-marquee{
+    font-family: Valorant;
   }
 
   .marquee-sub {
@@ -39,24 +47,24 @@
     position: absolute;
     white-space: nowrap;
     will-change: transform;
-    animation: marquee 9s linear infinite;
+    animation: marquee 16s linear infinite;
   }
 
   .track-sub {
     position: absolute;
     white-space: nowrap;
     will-change: transform;
-    animation: marquee-sub 9s linear infinite;
+    animation: marquee-sub 18s linear infinite;
   }
   
   @keyframes marquee {
     from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
+    to { transform: translateX(-65%); }
   }
 
   @keyframes marquee-sub {
-    from { transform: translateX(0); }
-    to { transform: translateX(50%); }
+    from { transform: translateX(-65%); }
+    to { transform: translateX(0); }
   }
   
 

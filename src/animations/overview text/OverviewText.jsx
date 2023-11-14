@@ -21,7 +21,7 @@ function OverviewText() {
     <div
         className='overview-text-container' ref={ref}>
 
-<div className="marquee-sub">
+<div className="marquee-sub submark">
         <div className="track">
         <div className="content">&nbsp;Designing Tomorrow, Today - A Creative Odyssey From Pixels to Perfection: Where Artistry Takes Flight</div>
         </div>
@@ -36,7 +36,7 @@ function OverviewText() {
     
         <div className="marquee">
         <div className="track">
-        <div >&nbsp;I'm Here to Help You With ? I'm Here to Help You With ?</div>
+        <div className='main-marquee'>&nbsp;I'm Here to Help You With ? I'm Here to Help You With ?</div>
         </div>
         </div>
 
@@ -46,7 +46,7 @@ function OverviewText() {
         </div>
         </div>
 
-         <div className="marquee-sub">
+         <div className="marquee-sub submark">
         <div className="track">
         <div className="content">&nbsp;Crafting Digital Dreams: Where Art Meets Innovation Sculpting Worlds, Painting Dreams, Shaping Realities</div>
         </div>
