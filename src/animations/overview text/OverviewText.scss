@@ -44,6 +44,7 @@
   }
   
   .track {
+    height:auto;
     position: absolute;
     white-space: nowrap;
     will-change: transform;
@@ -87,9 +88,8 @@
 
     .marquee {
 
-        height: 60px;
-        font-size: 3.8rem;
+        height: 70px;
+        font-size: 5rem;
         
     }
-    
 }
